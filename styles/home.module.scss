@@ -1,0 +1,35 @@
+@import 'vars';
+
+.root {
+  height: fit-content;
+  width: fit-content;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $background-color;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+  
+}
+
+.content {
+  height: calc(100vh - $header-height);
+  margin-top: $header-height;
+  color: red;
+  font-family: "Untitled Sans", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 21px;
+  overflow: scroll;
+  scrollbar-width: none;  /* Firefox */
+}
+
+.content::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
