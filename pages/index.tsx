@@ -28,8 +28,8 @@ const Home: NextPage = () => {
           <Classes className={styles.classes} />
           <Support className={styles.support} />
           <About className={styles.about} />
+          <Footer className={styles.footer} />
         </Content>
-        <Footer className={styles.footer} />
       </div>
     </div>
   )
