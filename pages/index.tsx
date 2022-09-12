@@ -2,13 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import {
   Navbar,
-  Content,
-  Footer,
-  Support,
-  About,
-  WhatsOn,
-  VisitUs,
-  Classes
+  Content
 } from '../components'
 import styles from '../styles/home.module.scss'
 
@@ -21,15 +15,6 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.container}>
-        <Navbar className={styles.navbar} />
-        <Content className={styles.content}>
-          <WhatsOn className={styles.whatsOn} />
-          <VisitUs className={styles.visitUs} />
-          <Classes className={styles.classes} />
-          <Support className={styles.support} />
-          <About className={styles.about} />
-          <Footer className={styles.footer} />
-        </Content>
       </div>
     </div>
   )
