@@ -10,9 +10,9 @@ export const NavigationContainer = ({
   const navigationItems = useMemo(() => items.map((item) => {
     return (
       <NavigationItem
-        key={item.name}
-        name={item.name}
-        icon={item.icon}
+        key={item.title}
+        name={item.title}
+        icon={<NavigationItemIcon icon={item.icon} />}
       />
     )
   }), [items]);

@@ -1,4 +1,4 @@
-import { NavigationItemProps } from '../navigation.types';
+import { NavigationItemProps } from '../../navigation.types';
 
 export const NavigationItem = ({
   name,
