@@ -12,7 +12,7 @@ export const NavigationContainer = ({
       <NavigationItem
         key={item.title}
         name={item.title}
-        icon={<NavigationItemIcon icon={item.icon} />}
+        type={item.icon}
       />
     )
   }), [items]);

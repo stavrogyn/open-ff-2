@@ -16,12 +16,12 @@ const IconSvg = ({ svg, className, ref }: IconSvgProps) => {
 
 export const Icon: IconType = memo(forwardRef(({
   className,
-  svg,
+  children,
 }: IconProps, ref: Ref<SVGSVGElement>) => {
   return (
     <IconSvg
       className={className}
-      svg={svg}
+      svg={children}
       ref={ref}
     />
   );

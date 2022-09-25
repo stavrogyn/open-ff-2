@@ -1,0 +1,1 @@
+export { DiceIcon } from './dice';

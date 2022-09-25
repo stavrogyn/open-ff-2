@@ -1,10 +1,10 @@
 import React from "react";
 
 export enum NavigationItemIconType {
-  Guest = "Guest",
-  Random = "Random",
-  List = "List",
-  Search = "Search",
+  Guest = "guest",
+  Random = "random",
+  List = "list",
+  Search = "search",
 }
 
 export type NavigationItem = {

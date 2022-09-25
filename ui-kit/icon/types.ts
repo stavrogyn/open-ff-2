@@ -1,11 +1,15 @@
 import { ReactNode, Ref, SVGProps, ComponentType, RefAttributes } from 'react';
 
 export type IconSvgProps = {
-  svg: ReactNode;
-  className?: string;
   ref: Ref<SVGSVGElement>
+  svg?: ReactNode;
+  className?: string;
 }
 
-export type IconProps = SVGProps<SVGSVGElement> & IconSvgProps;
+export type IconProps = SVGProps<SVGSVGElement> & {
+  ref: Ref<SVGSVGElement>
+  className?: string;
+  children?: ReactNode;
+};
 
 export type IconType = ComponentType<IconProps & RefAttributes<SVGSVGElement>>;

@@ -1,9 +1,8 @@
-import React from "react";
 import { NavigationItem, NavigationItemIconType } from "../../services/navigation/navigation.types";
 
 export type NavigationItemProps = {
   name: string;
-  icon?: React.ReactNode;
+  type: NavigationItemIconType;
   className?: string;
 }
 
@@ -12,5 +11,5 @@ export type NavigationContainerProps = {
 }
 
 export type NavigationItemIconProps = {
-  icon: NavigationItemIconType
+  type: NavigationItemIconType
 }

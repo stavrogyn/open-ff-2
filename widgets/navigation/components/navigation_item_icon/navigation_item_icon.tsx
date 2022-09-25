@@ -1,24 +1,28 @@
 import { NavigationItemIconType } from "../../../../services/navigation/navigation.types"
 import { NavigationItemIconProps } from "../../navigation.types"
+import { DiceIcon } from "./icons/dice"
+import { GlassIcon } from "./icons/glass"
+import { ListIcon } from "./icons/list"
+import { UserIcon } from "./icons/user"
 
 export const NavigationItemIcon = ({
-  icon
+  type
 }: NavigationItemIconProps) => {
 
-  if (icon === NavigationItemIconType.Guest) {
-    return null
+  if (type === NavigationItemIconType.Guest) {
+    return <UserIcon />
   }
 
-  if (icon === NavigationItemIconType.Random) {
-    return null
+  if (type === NavigationItemIconType.Random) {
+    return <DiceIcon />
   }
 
-  if (icon === NavigationItemIconType.List) {
-    return null
+  if (type === NavigationItemIconType.List) {
+    return <ListIcon />
   }
 
-  if (icon === NavigationItemIconType.Search) {
-    return null
+  if (type === NavigationItemIconType.Search) {
+    return <GlassIcon />
   }
 
   return null

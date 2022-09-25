@@ -1,0 +1,35 @@
+@import 'vars';
+
+.root {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 1px;
+  border-style: solid;
+  transform: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.guest {
+  border-color: $red;
+}
+  
+.random {
+  border-color: $green;
+}
+
+.list {
+  border-color: $blue;
+}
+
+.search {
+  border-color: $white;
+}
+
+.root:hover {
+  cursor: pointer;
+  transform: translateY(0) scale(0.95) translateZ(0);
+}
+
