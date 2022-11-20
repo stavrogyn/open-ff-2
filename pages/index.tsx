@@ -1,10 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { useUnit } from 'effector-react'
-import {
-  Navbar,
-  Content
-} from '../components'
 import styles from '../styles/home.module.scss'
 import { NavigationContainer } from '../widgets/navigation/navigation.container'
 import { navigationService } from '../services/navigation'

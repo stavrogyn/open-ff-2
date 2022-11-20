@@ -4,4 +4,23 @@
 
 .text {
   position: absolute;
+  opacity: 0%;
+}
+
+.text::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: pink;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.text:hover {
+  opacity: 100%;
 }

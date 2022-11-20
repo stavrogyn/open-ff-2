@@ -2,11 +2,10 @@ import { useRef } from 'react';
 
 import classNames from "classnames/bind";
 
-import { Tooltip } from '&uikit';
+import { Tooltip } from '&uikit/tooltip';
 
 import { NavigationItemIcon } from "../navigation_item_icon";
 import { NavigationItemProps } from '../../navigation.types';
-
 
 import styles from './navigation_item.module.scss';
 
@@ -22,7 +21,7 @@ export const NavigationItem = ({
 
   return (
     <div className={cx(className, 'root', type)}>
-      <Tooltip ref={ref}>
+      <Tooltip text={name} ref={ref}>
         <NavigationItemIcon type={type} />
       </Tooltip>
     </div>
