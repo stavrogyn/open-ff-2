@@ -1,27 +1,31 @@
-import { ILogger, ITransport, LogLevel } from "./logger.types";
+import { ILogger, LogType } from "./logger.types";
+import { ITransport } from "./transport.types";
 
 export class Logger implements ILogger {
-  transport: ITransport;
+  private transports: ITransport[];
 
-  constructor(transport: ITransport) {
-    this.transport = transport;
+  constructor(options: { transports: ITransport[] }) {
+    this.transports = options.transports;
   }
 
-  info(log: any) {
-    this.transport.sendLog(log, {
-      level: LogLevel.INFO,
-    });
+  public info(log: string) {
+    this.transports.forEach((transport => transport.sendLog({
+      message: log,
+      type: LogType.INFO,
+    })));
   };
 
-  warning(log: any) {
-    this.transport.sendLog(log, {
-      level: LogLevel.WARNING,
-    });
+  public warning(log: string) {
+    this.transports.forEach((transport => transport.sendLog({
+      message: log,
+      type: LogType.WARNING,
+    })));
   };
 
-  error(log: any) {
-    this.transport.sendLog(log, {
-      level: LogLevel.ERROR,
-    });
+  public error(log: string) {
+    this.transports.forEach((transport => transport.sendLog({
+      message: log,
+      type: LogType.ERROR,
+    })));
   };
 }

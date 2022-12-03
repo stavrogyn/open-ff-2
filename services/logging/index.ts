@@ -1,9 +1,6 @@
 import { Logger } from './logger.model';
-import { LogProdiver } from './logger.types';
-import { Transport } from './transport.model';
+import { ConsoleTransport } from './transport.model';
 
-const transport = new Transport({
-  prodiver: LogProdiver.CONSOLE,
-});
+const consoleTransport = new ConsoleTransport();
 
-export const logger = new Logger(transport);
+export const logger = new Logger({ transports: [consoleTransport] });
