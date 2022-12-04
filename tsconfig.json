@@ -16,7 +16,7 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "&uikit/*": ["ui-kit/*"],
+      "&uikit/*": ["shared/ui-kit/*"],
       "&components/*": ["components/*"],
       "&pages/*": ["pages/*"],
       "&widgets/*": ["widgets/*"],

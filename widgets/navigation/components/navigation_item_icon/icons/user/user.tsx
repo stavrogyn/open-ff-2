@@ -1,7 +1,7 @@
 import { memo, useRef } from "react";
 import classNames from "classnames/bind";
 
-import { Icon } from '&uikit/icon'
+import { Icon } from 'shared/ui-kit/icon'
 
 import styles from './user.module.scss';
 import { IconProps } from "../types";

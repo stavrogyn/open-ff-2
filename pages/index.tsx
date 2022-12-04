@@ -1,9 +1,11 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { useUnit } from 'effector-react'
-import styles from '../styles/home.module.scss'
 import { NavigationContainer } from '../widgets/navigation/navigation.container'
-import { navigationService } from '../services/navigation'
+import { navigationService } from '../features/navigation'
+
+import styles from '../shared/styles/home.module.scss'
+
 
 const Home: NextPage = () => {
 

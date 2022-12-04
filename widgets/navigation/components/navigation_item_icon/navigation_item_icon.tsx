@@ -1,4 +1,4 @@
-import { NavigationItemIconType } from "../../../../services/navigation/navigation.types"
+import { NavigationItemIconType } from "../../../../features/navigation/navigation.types"
 import { NavigationItemIconProps } from "../../navigation.types"
 import { DiceIcon } from "./icons/dice"
 import { GlassIcon } from "./icons/glass"

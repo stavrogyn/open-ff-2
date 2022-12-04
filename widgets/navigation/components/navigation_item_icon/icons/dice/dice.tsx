@@ -1,7 +1,7 @@
 import { memo, useRef } from "react";
 import classNames from "classnames/bind";
 
-import { Icon } from '&uikit/icon'
+import { Icon } from 'shared/ui-kit/icon'
 
 import { IconProps } from "../types";
 import styles from './dice.module.scss';

@@ -2,7 +2,7 @@ import { useRef } from 'react';
 
 import classNames from "classnames/bind";
 
-import { Tooltip } from '&uikit/tooltip';
+import { Tooltip } from 'shared/ui-kit/tooltip';
 
 import { NavigationItemIcon } from "../navigation_item_icon";
 import { NavigationItemProps } from '../../navigation.types';

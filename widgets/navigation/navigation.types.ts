@@ -1,4 +1,4 @@
-import { NavigationItem, NavigationItemIconType } from "../../services/navigation/navigation.types";
+import { NavigationItem, NavigationItemIconType } from "../../features/navigation/navigation.types";
 
 export type NavigationItemProps = {
   name: string;
